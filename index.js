@@ -12,8 +12,8 @@ mongoose.connect('mongodb://localhost/test', {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const DAYS_COUNT = 150;
-const ROOM_LIST = [1, 2]
+const DAYS_COUNT = 365;
+const ROOM_LIST = [1, 2];
 
 const BookingSchema = require('./src/models/bookingModel');
 const bookingModel = mongoose.model('booking', BookingSchema);
